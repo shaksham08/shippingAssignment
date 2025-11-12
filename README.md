@@ -1,16 +1,41 @@
-# React + Vite
+# Shipping Expense Calculator
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This web app helps logistics teams track shipping boxes, storing receiver details, weight, destination, and a color-coded identifier. The UI is built with React and styled with Tailwind, with Vite powering the development environment.
 
-Currently, two official plugins are available:
+## Prerequisites
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Node.js 18 or later
+- npm 9 or later (bundled with recent Node.js releases)
 
-## React Compiler
+You can confirm your versions with:
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+```bash
+node -v
+npm -v
+```
 
-## Expanding the ESLint configuration
+## Install Dependencies
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+From the project root, install all dependencies:
+
+```bash
+npm install
+```
+
+## Run the App in Development
+
+Start the Vite dev server (defaults to `http://localhost:5173`):
+
+```bash
+npm run dev
+```
+
+The terminal output shows the local and network URLs. The server supports hot module replacement, so UI changes appear immediately.
+
+## Build for Production
+
+Create an optimized build inside the `dist` directory:
+
+```bash
+npm run build
+```
